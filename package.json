@@ -1,0 +1,12 @@
+{
+  "name": "3d-frontend-backend-project",
+  "version": "1.0.0",
+  "description": "Interactive 3D visualization of frontend and backend communication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

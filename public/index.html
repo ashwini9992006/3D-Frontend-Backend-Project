@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowStack - Frontend & Backend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FlowStack</h1>
+    <p>3D Frontend & Backend Communication</p>
+  </header>
+
+  <main>
+    <section class="architecture">
+      <div class="node frontend" id="frontend">
+        <span class="node-icon">🖥️</span>
+        <h2>Frontend</h2>
+        <p>HTML, CSS, JavaScript</p>
+        <small>Waiting for request</small>
+      </div>
+
+      <div class="connection">
+        <span>HTTP Request →</span>
+        <div class="line"></div>
+        <span>← JSON Response</span>
+      </div>
+
+      <div class="node backend" id="backend">
+        <span class="node-icon">⚙️</span>
+        <h2>Backend</h2>
+        <p>Node.js + Express</p>
+        <small>Waiting for request</small>
+      </div>
+
+      <div class="connection database-link">
+        <span>Database Query →</span>
+        <div class="line"></div>
+        <span>← Sample Data</span>
+      </div>
+
+      <div class="node database" id="database">
+        <span class="node-icon">🗄️</span>
+        <h2>Database</h2>
+        <p>Simulated Data</p>
+        <small>Ready</small>
+      </div>
+    </section>
+
+    <section class="controls">
+      <h2>Test the connection</h2>
+      <p>Send a request from the frontend to the backend.</p>
+      <button id="sendRequest">Send Request</button>
+      <button id="resetButton" class="reset">Reset</button>
+    </section>
+
+    <section class="output">
+      <div>
+        <h2>Activity Log</h2>
+        <ul id="activityLog">
+          <li>System ready. Waiting for your request.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Backend Response</h2>
+        <pre id="response">No response yet...</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>FlowStack | Interactive Frontend and Backend Demo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
